@@ -20,8 +20,6 @@ export class MoviesController {
 
   @Get('/:id')
   getOne(@Param('id') id: number): Movie {
-    console.log(id);
-    console.log(typeof id);
     return this.moviesService.getOne(id);
   }
 
